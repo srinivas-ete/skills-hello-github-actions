@@ -1,8 +1,10 @@
 name: Post welcome comment
 on:
   pull_request:
-    types:[opened]
+    types: [opened]
 permissions:
   pull-requests: write
-    [!Note]
-    This is an incomplete workflow file. It is normal if you receive an error message. One step at a time!!
+jobs:
+  welcome:
+    name: Post welcome comment
+    runs-on: ubuntu-latest
